@@ -9,15 +9,16 @@ metadata:
  name: service
  namespace: default
 spec:
-replicas: 2
+replicas: 1
 template:
  metadata:
   labels:
    app: service
  spec:
   containers:
-  - image: aksdemoconreg.azurecr.io/service:20191223.2
+  - image: aksdemoconreg.azurecr.io/service:latest
     name: service
+    imagePullPolicy: "Always
     ports:
     - containerPort: 8080
     imagePullSecrets:

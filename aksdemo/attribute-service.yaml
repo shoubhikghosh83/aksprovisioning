@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
- name: attribute-service_d
+ name: attribute-service-d
 spec:
  replicas: 2
  selector:
@@ -21,7 +21,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
- name: attribute-service_s
+ name: attribute-service-s
 spec:
  type: NodePort
  selector:

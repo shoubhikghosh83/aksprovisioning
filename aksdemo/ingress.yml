@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+ name: mdm-ingress
+ annotations:
+  kubernetes.io/ingress.class: addon-http-application-routing
+  nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+ rules:
+ - host: mdm-ingress.88d59ba65ddb44848c1e.westeurope.aksapp.io 
+   http:
+    paths:
+    - path: /category
+      backend:
+       serviceName: category-service_s
+       servicePort: 30163
+    - path: /attribute
+      backend:
+       serviceName: attribute-service_s
+       servicePort: 30164

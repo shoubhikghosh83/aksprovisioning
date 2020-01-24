@@ -14,7 +14,7 @@ spec:
   spec:
    containers:
    - name: attribute-service
-     image: mdmimagecontainerregistry.azurecr.io/attribute_repo:2
+     image: mdmimagecontainerregistry.azurecr.io/attribute-repo:2
      ports:
      - containerPort: 8095
 ---

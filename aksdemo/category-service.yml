@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
  name: category-service_d
 spec:
- replicas: 1
+ replicas: 2
  selector:
   matchLabels:
    app: category-service

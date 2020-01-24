@@ -13,8 +13,8 @@ spec:
     - path: /category
       backend:
        serviceName: category-service-s
-       servicePort: 30163
+       servicePort: 8094
     - path: /attribute
       backend:
        serviceName: attribute-service-s
-       servicePort: 30164
+       servicePort: 8095

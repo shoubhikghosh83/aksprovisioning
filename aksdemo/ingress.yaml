@@ -12,9 +12,9 @@ spec:
     paths:
     - path: /category
       backend:
-       serviceName: category-service_s
+       serviceName: category-service-s
        servicePort: 30163
     - path: /attribute
       backend:
-       serviceName: attribute-service_s
+       serviceName: attribute-service-s
        servicePort: 30164
